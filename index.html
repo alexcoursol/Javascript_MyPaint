@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPaint</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="my_paint.js"></script>
+</head>
+<body>
+	<img id="img" src="">
+	<div id="container">
+		<aside id="tools_box">
+			<ul>
+				<li>
+					<label id='open' for="image" class="tools2"></label><input type="file" name="images" id="image"/>
+					<a title='save your drawing' download="mybeatifuldrawing" id='save2'><div class='tools2' id='save'></div></a>
+				</li>
+				<li>
+					<div class="tools" id="pencil"></div>
+					<div class="tools" id="line"></div>
+				</li>
+				<li>
+					<div class="tools" id="rectangle"></div>
+					<div class="tools" id="circle"></div>
+				</li>
+				<li>
+					<div class="tools" id="eraser"></div>
+				</li>
+				<li>
+					<input id="thickness" type="range" value="5">
+				</li>
+				<li>
+					<input class="tools" type="color" id="color">
+					<div class="tools" id="fill"></div>
+				</li>
+				<li>
+					<div class="tools2" id="layerTool"></div>
+				</li>
+				<li>
+					<input class="rgb red" type="text" name="red" value="0" />
+					<input class="rgb green" type="text" name="green" value="0" />
+					<input class="rgb blue" type="text" name="blue" value="0" />
+				</li>
+				<li>
+					<input type="submit" name="rgbBox" id="rgbBox" value="RGB Color"/>
+				</li>
+				<li>
+					<input class="hsl red" type="text" name="red" value="0" />
+					<input class="hsl green" type="text" name="green" value="0" />
+					<input class="hsl blue" type="text" name="blue" value="0" />
+				</li>
+				<li>
+					<input type="submit" name="rgbBox" id="hslBox" value="HSL Color"/>
+				</li>
+			</ul>
+		</aside>
+		<div id="canvases">
+			<canvas id="canvaslayer1" height="700" width="1000"></canvas>
+		</div>
+		<div id="layers">
+			<canvas id="layer1" class='layer' height="700" width="1000"></canvas>
+		</div>
+	</div>
+</body>
+</html>

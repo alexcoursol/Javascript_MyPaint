@@ -1,0 +1,135 @@
+body, div, canvas, ul, li, aside, a {
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+	font-size: 1em;
+	font-family: Arial, Sans-serif;
+	list-style: none;
+	text-decoration: none;
+	color: #000000;
+}
+
+#container {
+	width: 80%;
+	margin: 50px auto;
+	display: flex;
+}
+
+#tools_box {
+	width: 10%;
+}
+
+#tools_box ul {
+	display: flex;
+	flex-direction: column;
+}
+
+#tools_box ul li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.tools {
+	width: 40px;
+	height: 40px;
+	margin: 1%;
+	cursor: pointer;
+	text-align: center;
+}
+
+.tools2 {
+	width: 40px;
+	height: 40px;
+	margin: 1%;
+	cursor: pointer;
+	text-align: center;
+}
+
+#pencil {
+	background-image: url('images/pencil.png');
+}
+#circle {
+	background-image: url('images/circle.png');
+}
+#rectangle {
+	background-image: url('images/rectangle.png');
+}
+#line {
+	background-image: url('images/line.png');
+}
+#eraser {
+	background-image: url('images/eraser.png');
+}
+#color {
+	background-image: url('images/color.png');
+}
+#fill {
+	border: 2px solid #000000;
+}
+#save {
+	background-image: url('images/save.png');
+}
+#open {
+	background-image: url('images/open.png');
+}
+#layerTool {
+	background-image: url('images/layer.png');
+}
+#image {
+	display: none;
+}
+
+.red {
+	background-color: rgba(255, 0, 0, 0.1);
+}
+.green {
+	background-color: rgba(0, 255, 0, 0.1);
+}
+.blue {
+	background-color: rgba(0, 0, 255, 0.1);
+}
+.rgb {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+#rgbBox, #hslBox{
+	margin-top: -25px;
+}
+.hsl {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+#canvases {
+	width: 1000px;
+	height: 700px;
+}
+
+#canvaslayer1 {
+	border: 2px solid #000000;
+	cursor: default;
+	position: absolute;
+	z-index: 1;
+}
+
+#layers {
+	width: 100px;
+	margin-left: 1%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.layer {
+	border: 2px solid #000000;
+	cursor: pointer;
+	width: 100px;
+	height: 70px;
+}
